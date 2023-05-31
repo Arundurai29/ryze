@@ -3241,7 +3241,7 @@ body.dark,
   transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 16px;
-  padding: 10px 29.9px;
+  padding: 10px 28.9px;
   border: none;
   background: none;
   margin: 0;
@@ -3253,9 +3253,19 @@ body.dark,
 }
 
 .mixitup-control-active {
-  color: #fff;
-  border: none !important;
-  background: #8830df !important;
+  color: #8830df;
+  /* border: none !important; */
+  /* background: #8830df !important; */
+  border-left: 0.3px solid #8830df66 !important;
+  border-right: 0.3px solid #8830df66 !important;
+  border-top: 5.3px solid #8830df !important;
+}
+.mixitup-control-active:hover {
+  color: #8830df;
+  background: none !important;
+  border-left: 0.3px solid #8830df66 !important;
+  border-right: 0.3px solid #8830df66 !important;
+  border-top: 5.3px solid #8830df !important;
 }
 .filter {
   border-bottom: 0.3px solid #8830df66 !important;
@@ -3309,3 +3319,11 @@ a{
 #load-more {
   margin: auto;
 }
+.portfolio-items .portfolio-item {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-items .portfolio-item.hide {
+  transform: translateY(100%);
+}
+
